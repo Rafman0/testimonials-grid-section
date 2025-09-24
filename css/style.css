@@ -1,0 +1,151 @@
+.lg-card, .grid--first, .grid--fourth, .grid--fifth {
+  width: 18.75rem;
+  border-radius: 0.4375rem;
+  margin-bottom: 1.875rem;
+  box-shadow: 0 0 0.9375rem #555;
+  padding: 1.875rem;
+}
+
+.sh-card, .grid--second, .grid--third {
+  width: 18.75rem;
+  border-radius: 0.4375rem;
+  margin-bottom: 1.875rem;
+  box-shadow: 0 0 0.9375rem #555;
+  padding: 1.875rem;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 0.0625rem + 2vw, 1.5625rem);
+}
+
+p {
+  font-size: 13px;
+  font-size: clamp(0.9375rem, 0.0625rem + 2vw, 1.125rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(214, 17%, 92%);
+  font-family: Barlow Semi Condensed;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+#footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 3.125rem 0;
+}
+#footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  margin: 3.75rem 0;
+}
+.grid--first {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+.grid--first h4, .grid--first h5 {
+  color: hsl(0, 0%, 100%);
+}
+.grid--first p {
+  color: hsl(0, 0%, 81%);
+}
+.grid--second {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+.grid--second h4, .grid--second h5 {
+  color: hsl(0, 0%, 100%);
+}
+.grid--second p {
+  color: hsl(0, 0%, 81%);
+}
+.grid--third {
+  background-color: hsl(0, 0%, 100%);
+}
+.grid--third h4, .grid--third h5 {
+  color: hsl(217, 19%, 35%);
+}
+.grid--third p {
+  color: hsl(224, 10%, 45%);
+}
+.grid--fourth {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+.grid--fifth {
+  background-color: hsl(0, 0%, 100%);
+}
+.grid--fifth h4, .grid--fifth h5 {
+  color: hsl(217, 19%, 35%);
+}
+.grid--fifth p {
+  color: hsl(224, 10%, 45%);
+}
+
+h4 {
+  margin: 1.125rem 0;
+}
+
+.img-wrapper {
+  display: flex;
+}
+
+img {
+  height: 1.875rem;
+  width: 1.875rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+@media screen and (min-width: 56.25em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    max-width: 56.25rem;
+  }
+  .grid--first {
+    width: 31.25rem;
+    height: 21.875rem;
+    margin-right: 1.25rem;
+  }
+  .grid--second {
+    height: 21.875rem;
+  }
+  .grid--third {
+    height: 20.625rem;
+  }
+  .grid--fourth {
+    width: 28.75rem;
+    height: 20.625rem;
+    margin-left: -10rem;
+  }
+  .grid--fifth {
+    width: 31.25rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

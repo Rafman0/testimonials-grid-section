@@ -1,0 +1,27 @@
+@use '../util' as *
+@use '../util/variables' as *
+
+
+@media screen and ( min-width: em(900) )
+    .grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: auto auto
+        gap: 1rem
+        max-width: rem(900)
+        &--first
+            width: rem(500)
+            height: rem(350)
+            margin-right: rem(20)
+        &--second
+            height: rem(350)
+        &--third
+            height: rem(330)
+        &--fourth
+            width: rem(460)
+            height: rem(330)
+            margin-left: rem(-160)
+        &--fifth
+            width: rem(500)
+
+
+    

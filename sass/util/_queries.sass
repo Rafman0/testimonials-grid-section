@@ -1,0 +1,37 @@
+@use 'functions' as *
+@use 'sass:map'
+    
+// 700px, 900px, 1440px
+// small/mobile devices =         small 700 and below
+// tablets/laptop = 900 - 1399              medium
+// laptop/above = 1440 - above              large
+
+// for tab/desktop view | min-width
+// sass map for breakpoints
+$breakpoint-up:    (
+    'medium':   em(700),
+    'large':    em(900),
+    'xlarge':   em(1440)
+)
+
+// mixin
+=query($size)
+    @media (min-width: map.get($breakpoint-up, $size))
+        @content
+
+
+
+// for mobile/tab view | max-width
+// 699.98px, 899.98px, 1439.98px
+$breakpoint-down:   (
+    'small':    em(699.98),
+    'medium':   em(899.98),
+    'large':    em(1439.98)
+)
+
+// mixin
+=querydown($size)
+    @media (max-width: map.get($breakpoint-down, $size))
+        @content
+
+
