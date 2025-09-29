@@ -35,8 +35,10 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
-- Live Site URL: [live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://github.com/Rafman0/testimonials-grid-section.git
+)
+- Live Site URL: [live site URL here](https://rafman0.github.io/testimonials-grid-section/
+)
 
 ## My process
 
@@ -76,3 +78,4 @@ ChatGPT gave me an idea that i have to use grid instead of flexbox, and also exp
 ## Acknowledgments
 
 Would like to give credit to myself for being able to have come this far, and for even doing the challenges.
+
